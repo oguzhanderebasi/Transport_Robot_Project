@@ -13,10 +13,10 @@
 SoftwareSerial nodemcu(D6, D5);
 
 // Set these to run example.
-#define FIREBASE_HOST "fir-com-c8de4-default-rtdb.firebaseio.com"
-#define FIREBASE_AUTH "Mr9oVgDez2tNddLNc59GAYVDSp1JRcB1xg4yiJP2"
+#define FIREBASE_HOST ""
+#define FIREBASE_AUTH ""
 #define WIFI_SSID "DSH"
-#define WIFI_PASSWORD "Wohngemeinschaft"
+#define WIFI_PASSWORD ""
 
 void setup() {
   Serial.begin(115200);
