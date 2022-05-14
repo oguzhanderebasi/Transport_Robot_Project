@@ -1211,51 +1211,6 @@ void pidMove(){
   }
 }
 
-// Function for forward
-void forward(){
-  analogWrite(pwm[0], 90);
-  analogWrite(pwm[1], 90);
-  digitalWrite(in1[0], LOW);
-  digitalWrite(in2[0], HIGH);
-  digitalWrite(in1[1], HIGH);
-  digitalWrite(in2[1], LOW);
-  Serial.println("forward");
-  delay(480);
-  stop();
-  delay(600);
-}
-
-void back() {
-  right();
-  right();
-}
-
-void left() {
-  analogWrite(pwm[0], 100);
-  analogWrite(pwm[1], 100);
-  digitalWrite(in1[0], LOW);
-  digitalWrite(in2[0], HIGH);
-  digitalWrite(in1[1], LOW);
-  digitalWrite(in2[1], HIGH); 
-  Serial.println("Left");
-  delay(350);
-  stop();
-  delay(900);
-}
-
-void right() {
-  analogWrite(pwm[0], 100);
-  analogWrite(pwm[1], 100);
-  digitalWrite(in1[0], HIGH);
-  digitalWrite(in2[0], LOW);
-  digitalWrite(in1[1], HIGH);
-  digitalWrite(in2[1], LOW);
-  Serial.println("Right");
-  delay(350);
-  stop();
-  delay(900);
-}
-
 void stop() {
   digitalWrite(pwm[0], LOW);
   digitalWrite(pwm[1], LOW);
